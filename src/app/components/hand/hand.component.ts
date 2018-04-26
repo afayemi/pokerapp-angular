@@ -20,11 +20,11 @@ export class HandComponent implements OnInit {
 
   ngOnInit() {
 
-    this.handService.getData().subscribe(data => {
-      console.log(data);
+    this.handService.gethand().subscribe(hand => {
+      this.hand = hand;
     });
 
-    this.handService.gethand();
+    //this.handService.gethand();
   }
 
   drawHand(): Card[] {
