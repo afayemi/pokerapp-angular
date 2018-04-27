@@ -4,13 +4,6 @@ import { of } from 'rxjs/observable/of';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Observable } from 'rxjs/Observable';
-
-import { Card } from '../models/Card';
-
-import {HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-
 import { Hand } from '../models/Hand';
 import { Card } from '../models/Card';
 
@@ -28,15 +21,6 @@ export class GameService {
     constructor(
         private http: HttpClient,
     ) {}
-
-
-    gethand(): Observable<Card[]> {
-      return this.http.get<Card[]>(this.getHand);
-    }
-
-    getHandValue(): Observable<string> {
-      return this.http.get<string>(this.getHandValue);
-    }
 
 
   handUrl: string = "https://localhost:8443/getHand";
