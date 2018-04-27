@@ -41,6 +41,7 @@ export class HandService {
      });
    }
 
+   
 
    gethand(): Observable<Card[]>{
 

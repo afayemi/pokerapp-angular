@@ -33,4 +33,12 @@ export class HandComponent implements OnInit {
     return this.hand;
   }
 
+  resetGame(): Card[]{
+
+    console.log("Reset game");
+    //window.location.href="https://google.com"
+
+    return this.hand;
+  }
+
 }
