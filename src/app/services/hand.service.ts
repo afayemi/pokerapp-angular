@@ -22,6 +22,7 @@ export class HandService {
       private http: HttpClient,
   ) {}
 
+
    getData(){
      this.data = new Observable(observer => {
 

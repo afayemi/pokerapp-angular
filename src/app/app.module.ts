@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/cards/card.component';
 import { HandComponent } from './components/hand/hand.component';
 import { DeckComponent } from './components/deck/deck.component';
-import { GameComponent } from './components/game/game.component';
 import { CardServiceService } from './services/card-service.service';
 import { HandService } from './services/hand.service';
 import { GameService } from './services/game.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -17,11 +18,12 @@ import { GameService } from './services/game.service';
     AppComponent,
     CardComponent,
     HandComponent,
-    DeckComponent,
-    GameComponent
+    DeckComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [CardServiceService, HandService, GameService],
   bootstrap: [AppComponent, CardComponent]
