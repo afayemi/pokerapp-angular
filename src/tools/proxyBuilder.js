@@ -4,7 +4,12 @@ const _ = require('lodash');
 const apiMap = {
 	'poker-game' : {
     uri : 'localhost:8443',
-    https: true
+    https: true,
+		extraParams : {
+			//allow self signed cert
+			rejectUnauthorized : false
+		}
+
   }
 };
 

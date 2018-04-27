@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
+import { GameComponent} from './components/game/game.component';
 import { CardComponent } from './components/cards/card.component';
 import { HandComponent } from './components/hand/hand.component';
 import { DeckComponent } from './components/deck/deck.component';
@@ -26,6 +27,6 @@ import { AppRoutingModule } from './/app-routing.module';
     AppRoutingModule
   ],
   providers: [CardServiceService, HandService, GameService],
-  bootstrap: [AppComponent, CardComponent]
+  bootstrap: [AppComponent, CardComponent, GameComponent]
 })
 export class AppModule { }
