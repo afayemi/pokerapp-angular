@@ -1,4 +1,4 @@
-export interface Card{
-  suit: String,
-  value: number
+export class Card {
+  suit: String;
+  value: number;
 }
